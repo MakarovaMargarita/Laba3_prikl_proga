@@ -1,5 +1,8 @@
 import re
 
 s = str(input())
-result = re.split("ab", s)
-print(result)
+a = bool(re.match(r'[^z]*z[^z]{3}z[^z]*', s))
+if a == True:
+  print(s)
+else:
+  print("no find")
